@@ -1,0 +1,14 @@
+/*for firefox browser*/
+::placeholder {
+    color: #FFFFFF; 
+}
+  
+/*for internet explorer 10-11 */
+:-ms-input-placeholder { 
+   color: #FFFFFF;
+}
+  
+/*for  microsoft edge */
+::-ms-input-placeholder { 
+   color: #FFFFFF;
+}

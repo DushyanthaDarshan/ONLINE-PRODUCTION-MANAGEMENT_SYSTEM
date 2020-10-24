@@ -1,0 +1,56 @@
+<div>
+                            <label for="customer">Customer</label>
+                            <input type="radio" id="customer" name="type" value="customer">
+                            </div>
+                            <div>
+                            <label for="sales">Sales Agents</label>
+                            <input type="radio" id="sales" name="type" value="sales">
+                            </div>
+
+
+
+
+$name = "";
+$username = "";
+$email = "";
+$country = "";
+$phone = "";
+$address = "";
+$nic = "";
+$status = "";
+
+
+<form method="post" action="admin.php" class="admin">
+                	<p style="font-size: 30px; text-align: center;"><strong>Add Admin Profile</strong></p>
+					<?php include('errors.php'); ?>
+					<input type="text" name="name" placeholder="Name">
+					<input type="text" name="username" placeholder="Username">
+					<input type="text" name="email" placeholder="Email">
+					<input type="text" name="country" placeholder="Country">
+					<input type="password" name="password1" placeholder="Password">
+					<input type="password" name="password2" placeholder="Comfirm Password">
+					<input type="text" name="phone" placeholder="Mobile Number">
+					<input type="text" name="address" placeholder="Address">
+					<input type="text" name="nic" placeholder="NIC">
+					<input type="submit" name="addAdminbtn" value="Save">
+					<?php include('success.php'); ?>
+            	</form>
+
+
+
+				margin-left: 100px;
+				marging-right: 200px;
+
+
+
+				<script>
+                document.getElementById("imgTag").src = "imgs/mangoe_jam.jpg";
+              </script>
+
+
+			  <?php 
+                $username = mysqli_real_escape_string($db, $_POST['username']);
+                $get_query = "SELECT * FROM user WHERE USERNAME='$username'";
+                $excute = mysqli_query($db, $get_query);
+                $rows=mysqli_fetch_assoc($excute)
+            ?>

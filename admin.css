@@ -1,0 +1,225 @@
+body {
+    background-size:cover;
+}
+
+#middle {
+    padding: 20px 0px;
+    transition: 0.4s;
+    width: 100%;
+    z-index: 1;
+}
+
+#dashBoard {
+    float: left;
+    background-color: #26201e;
+    color: #FFFFFF;
+    width: 25%;
+    height: 1500px;
+    z-index: 1;
+    margin-top: 178px;
+    position: static;
+}
+
+#dashBoard p {
+    color: #FFFFFF;
+}
+
+/*right side content*/
+#right {
+    float: right;
+    background-image: url("./imgs/welcome.png");
+    color: #000000;
+    width: 75%;
+    height: 1500px;
+    z-index: 1;
+    margin-top: 178px;
+    position: static;
+}
+
+/*hide content untill click the internal btn*/
+#right div {
+    display: none;
+}
+
+#right section {
+    display: block;
+}
+
+#right div:target {
+    display: block;
+  }
+
+.collapsible {
+    border: none;
+    background-color: #1c2a4f;
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 200px;
+    text-align: left;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 15px;
+    outline: none;
+}
+
+.collapsible-body {
+    overflow: hidden;
+    padding: 0px 18px;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsible:hover {
+    background-color: #4487f2;
+    color: #FFFFFF;
+}
+  
+.collapsible-active {
+    background-color: #ebed79;
+    color: #000000;
+}
+  
+.collapsible:after {
+    content: '\261E';
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+  
+.collapsible-active:after {
+    content: "\261C";
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*for internal btns*/
+.internal-btn {
+    background-color: #1d15b0;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    padding: 5px 0px;
+    width: 80%;
+    height: 40px;
+}
+
+.internal-btn:hover {
+    background-color: #5850f2;
+}
+
+.internal-btn-active {
+    background-color: #faf7b9;
+    color: #000000;
+}
+
+.admin form {
+	background: #7b42ed;
+	width: 400px;
+	height: auto;
+    padding: 15px;
+    margin-left: 250px;
+	display: inline-table;
+    box-shadow: 5px 10px 8px rgba(0, 0, 128, 0.5);
+    color: #000000;
+}
+
+.form.signup {
+	width: 400px;
+	text-align: center;
+}
+
+input {
+	width: 400px;
+	text-align: center;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #FFFFFF;
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: 700px;
+	padding: 20px;
+	transition: border 0.5s;
+	outline: none;
+	color: #000000;
+}
+
+input[type="submit"] {
+	border: none;
+	width: 450px;
+	background: #09D9F9;
+	color: #1D09F9;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bald;
+	line-height: 25px;
+	padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover {
+	color: #FFFFFF;
+	background-color: #A109F9;
+}
+
+.error {
+    background-color: #F90919; 
+    width: 90%; 
+    border: 1px solid #F90919; 
+    height: 30px; 
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 10px;
+    padding-top: 0px;
+    margin-bottom: 5px;
+}
+
+.success {
+    background-color: #09f925; 
+    width: 90%; 
+    border: 1px solid #09f925; 
+    height: 30px; 
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 10px;
+    padding-top: 0px;
+    margin-bottom: 5px;
+}
+
+/*Dashboard msgs */
+.error-msg {
+    border: none;
+    background-color: #F90919;
+    border: 1px solid #F90919; 
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 15px;
+    outline: none;
+}
+
+.success-msg {
+    border: none;
+    background-color: #09f925;
+    border: 1px solid #09f925; 
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+    padding: 15px;
+    outline: none;
+}
